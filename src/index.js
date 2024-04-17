@@ -13,6 +13,7 @@ app.use(
   })
 );
 app.use(express.json());
+app.use("/server", require("./routes/User"));
 
 const port = process.env.PORT;
 
